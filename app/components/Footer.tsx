@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="ml-6">
+        <div>
           <h4 className="font-bold text-xl mb-2">Services</h4>
           <ul className="space-y-1">
             <li><Link href="/services/plumbing" className="hover:underline">Plumbing</Link></li>
