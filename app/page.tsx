@@ -20,7 +20,7 @@ export default function Home() {
               Serving Michigan Homes <span className="italic">Since</span> 1979<br />
             </h2>
             <p className="text-lg sm:text-xl mb-8">
-              LeakFinder.com is Southeast Michigan's Trusted Expert in Plumbing, Heating, Cooling, Electrical &amp; Water Cleanup Services.
+              LeakFinder.com is Southeast Michigan&rsquo;s Trusted Expert in Plumbing, Heating, Cooling, Electrical &amp; Water Cleanup Services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -86,7 +86,7 @@ export default function Home() {
             },
           ].map((service, i) => (
             <div key={i} className="bg-white rounded shadow overflow-hidden transform transition-transform duration-200 hover:scale-105">
-              <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
+              <Image src={service.image} alt={service.title} width={400} height={200} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#00033d] mb-2">{service.title}</h3>
                 <p className="text-gray-700 text-sm leading-relaxed mb-4">{service.desc}</p>

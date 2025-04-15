@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const Footer = () => {
@@ -18,23 +19,22 @@ const Footer = () => {
         <div className="ml-6">
           <h4 className="font-bold text-xl mb-2">Services</h4>
           <ul className="space-y-1">
-            <li><a href="/services/plumbing" className="hover:underline">Plumbing</a></li>
-            <li><a href="/services/water-cleanup" className="hover:underline">Water Cleanup</a></li>
-            <li><a href="/services/gas" className="hover:underline">Gas</a></li>
-            <li><a href="/services/heating" className="hover:underline">Heating</a></li>
-            <li><a href="/services/cooling" className="hover:underline">Cooling</a></li>
-            <li><a href="/services/air-quality" className="hover:underline">Indoor Air Quality</a></li>
-            <li><a href="/services/electrical" className="hover:underline">Electrical</a></li>
-
+            <li><Link href="/services/plumbing" className="hover:underline">Plumbing</Link></li>
+            <li><Link href="/services/water-cleanup" className="hover:underline">Water Cleanup</Link></li>
+            <li><Link href="/services/gas" className="hover:underline">Gas</Link></li>
+            <li><Link href="/services/heating" className="hover:underline">Heating</Link></li>
+            <li><Link href="/services/cooling" className="hover:underline">Cooling</Link></li>
+            <li><Link href="/services/air-quality" className="hover:underline">Indoor Air Quality</Link></li>
+            <li><Link href="/services/electrical" className="hover:underline">Electrical</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-bold text-xl mb-2">Navigation</h4>
           <ul className="space-y-1">
-            <li><a href="/" className="hover:underline">Home</a></li>
-            <li><a href="/about" className="hover:underline">About Us</a></li>
-            <li><a href="/contact" className="hover:underline">Contact</a></li>
-            <li><a href="/careers" className="hover:underline">Careers</a></li>
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/about" className="hover:underline">About Us</Link></li>
+            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+            <li><Link href="/careers" className="hover:underline">Careers</Link></li>
           </ul>
         </div>
 
