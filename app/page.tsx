@@ -1,5 +1,6 @@
 import "./globals.css";
 import Image from "next/image";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
 
@@ -26,13 +27,13 @@ export default function Home() {
                 href="tel:2484671761"
                 className="bg-[#00033d] text-white px-6 py-3 rounded shadow text-lg inline-flex items-center justify-center gap-2"
               >
-                <span>📞</span> (248) 467-1761
+                <FaPhoneAlt className="text-white" /> (248) 467-1761
               </a>
               <a
                 href="/contact"
                 className="bg-[#f6be00] text-black px-6 py-3 rounded shadow text-lg inline-flex items-center justify-center gap-2"
               >
-                <span>✉️</span> Contact Us
+                <FaEnvelope className="text-black" /> Contact Us
               </a>
               <a
                 href="/book"

@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-[#00033d] text-white text-sm pt-10 pb-6 px-6 sm:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center text-center">
           <Image src="/full_Logo_customcolor_6-5-23.png" alt="LeakFinder Logo" width={300} height={120} />
           <div className="mt-4 text-center">
             <div>#8112263 Master Plumber</div>
@@ -14,7 +15,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
+        <div className="ml-6">
           <h4 className="font-bold text-xl mb-2">Services</h4>
           <ul className="space-y-1">
             <li><a href="/services/plumbing" className="hover:underline">Plumbing</a></li>
@@ -40,19 +41,19 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-2">Contact</h4>
           <div className="flex items-start gap-2 mb-2">
-            <Image src="/icons/phone.svg" alt="Phone" width={20} height={20} />
+            <FaPhone className="mt-1" />
             <span>(888) 251-1270</span>
           </div>
           <div className="flex items-start gap-2 mb-2">
-            <Image src="/icons/mail.svg" alt="Mail" width={20} height={20} />
+            <FaEnvelope className="mt-1" />
             <a href="/contact" className="underline">Contact Us</a>
           </div>
           <div className="flex items-start gap-2 mb-2">
-            <Image src="/icons/location.svg" alt="Location" width={20} height={20} />
+            <FaMapMarkerAlt className="mt-1" />
             <span>2142 Pontiac Road, Suite 201<br />Auburn Hills, Michigan 48326</span>
           </div>
           <div className="flex items-start gap-2">
-            <Image src="/icons/clock.svg" alt="24/7" width={20} height={20} />
+            <FaClock className="mt-1" />
             <span>24/7 Live Answering</span>
           </div>
         </div>
